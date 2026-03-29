@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace pryEdDelgadoS
 {
-    public partial class frmDatosdelDesarrollador : Form
+    public partial class frmClientes : Form
     {
-        public frmDatosdelDesarrollador()
+        public frmClientes()
         {
             InitializeComponent();
         }
 
-       
+        private void txtNombreCliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

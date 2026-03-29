@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace pryEdDelgadoS
 {
-    public partial class frmDatosdelDesarrollador : Form
+    public partial class frmAlumnos : Form
     {
-        public frmDatosdelDesarrollador()
+        public frmAlumnos()
         {
             InitializeComponent();
         }
 
-       
+        private void cmdGrabar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

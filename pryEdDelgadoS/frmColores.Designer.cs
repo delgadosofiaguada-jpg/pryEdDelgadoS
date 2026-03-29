@@ -33,56 +33,77 @@
             this.cmdListar = new System.Windows.Forms.Button();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.lstColores = new System.Windows.Forms.ListBox();
+            this.lblTituloColor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNombreColor
             // 
             this.lblNombreColor.AutoSize = true;
-            this.lblNombreColor.Location = new System.Drawing.Point(52, 31);
+            this.lblNombreColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreColor.Location = new System.Drawing.Point(14, 67);
             this.lblNombreColor.Name = "lblNombreColor";
-            this.lblNombreColor.Size = new System.Drawing.Size(47, 13);
+            this.lblNombreColor.Size = new System.Drawing.Size(55, 15);
             this.lblNombreColor.TabIndex = 0;
             this.lblNombreColor.Text = "Nombre:";
             // 
             // txtNombreColor
             // 
-            this.txtNombreColor.Location = new System.Drawing.Point(114, 24);
+            this.txtNombreColor.Location = new System.Drawing.Point(75, 67);
             this.txtNombreColor.Name = "txtNombreColor";
-            this.txtNombreColor.Size = new System.Drawing.Size(128, 20);
+            this.txtNombreColor.Size = new System.Drawing.Size(179, 20);
             this.txtNombreColor.TabIndex = 1;
             // 
             // cmdListar
             // 
-            this.cmdListar.Location = new System.Drawing.Point(55, 83);
+            this.cmdListar.BackColor = System.Drawing.Color.White;
+            this.cmdListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdListar.Location = new System.Drawing.Point(15, 109);
             this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(75, 23);
+            this.cmdListar.Size = new System.Drawing.Size(93, 23);
             this.cmdListar.TabIndex = 2;
             this.cmdListar.Text = "Listar";
-            this.cmdListar.UseVisualStyleBackColor = true;
+            this.cmdListar.UseVisualStyleBackColor = false;
             // 
             // cmdGrabar
             // 
-            this.cmdGrabar.Location = new System.Drawing.Point(167, 83);
+            this.cmdGrabar.BackColor = System.Drawing.Color.White;
+            this.cmdGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdGrabar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdGrabar.Location = new System.Drawing.Point(147, 109);
             this.cmdGrabar.Name = "cmdGrabar";
-            this.cmdGrabar.Size = new System.Drawing.Size(75, 23);
+            this.cmdGrabar.Size = new System.Drawing.Size(107, 23);
             this.cmdGrabar.TabIndex = 3;
             this.cmdGrabar.Text = "Grabar";
-            this.cmdGrabar.UseVisualStyleBackColor = true;
+            this.cmdGrabar.UseVisualStyleBackColor = false;
             // 
             // lstColores
             // 
+            this.lstColores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstColores.FormattingEnabled = true;
-            this.lstColores.Location = new System.Drawing.Point(55, 147);
+            this.lstColores.ItemHeight = 15;
+            this.lstColores.Location = new System.Drawing.Point(15, 158);
             this.lstColores.Name = "lstColores";
-            this.lstColores.Size = new System.Drawing.Size(187, 95);
+            this.lstColores.Size = new System.Drawing.Size(239, 124);
             this.lstColores.TabIndex = 5;
             this.lstColores.SelectedIndexChanged += new System.EventHandler(this.lstColores_SelectedIndexChanged);
+            // 
+            // lblTituloColor
+            // 
+            this.lblTituloColor.AutoSize = true;
+            this.lblTituloColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloColor.Location = new System.Drawing.Point(12, 26);
+            this.lblTituloColor.Name = "lblTituloColor";
+            this.lblTituloColor.Size = new System.Drawing.Size(115, 16);
+            this.lblTituloColor.TabIndex = 6;
+            this.lblTituloColor.Text = "Ingrese el color";
             // 
             // frmColores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Linen;
+            this.ClientSize = new System.Drawing.Size(266, 289);
+            this.Controls.Add(this.lblTituloColor);
             this.Controls.Add(this.lstColores);
             this.Controls.Add(this.cmdGrabar);
             this.Controls.Add(this.cmdListar);
@@ -103,5 +124,6 @@
         private System.Windows.Forms.Button cmdListar;
         private System.Windows.Forms.Button cmdGrabar;
         private System.Windows.Forms.ListBox lstColores;
+        private System.Windows.Forms.Label lblTituloColor;
     }
 }
