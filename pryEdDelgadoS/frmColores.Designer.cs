@@ -52,6 +52,7 @@
             this.txtNombreColor.Name = "txtNombreColor";
             this.txtNombreColor.Size = new System.Drawing.Size(179, 20);
             this.txtNombreColor.TabIndex = 1;
+            this.txtNombreColor.TextChanged += new System.EventHandler(this.txtNombreColor_TextChanged);
             // 
             // cmdListar
             // 
@@ -75,6 +76,7 @@
             this.cmdGrabar.TabIndex = 3;
             this.cmdGrabar.Text = "Grabar";
             this.cmdGrabar.UseVisualStyleBackColor = false;
+            this.cmdGrabar.Click += new System.EventHandler(this.cmdGrabar_Click);
             // 
             // lstColores
             // 
@@ -112,6 +114,7 @@
             this.Name = "frmColores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmColores";
+            this.Load += new System.EventHandler(this.frmColores_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

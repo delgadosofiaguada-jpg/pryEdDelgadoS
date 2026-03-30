@@ -21,5 +21,30 @@ namespace pryEdDelgadoS
         {
 
         }
+
+        private void cmdGrabar_Click(object sender, EventArgs e)
+        {
+           clsArchivo x = new clsArchivo();
+            x.Grabar(txtNombreColor.Text);
+            MessageBox.Show("Datos Grabado!");
+            txtNombreColor.Text = "";
+        }
+
+        private void txtNombreColor_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreColor.Text == "")
+            {
+                cmdGrabar.Enabled = false;
+            }
+            else
+            { 
+                cmdGrabar.Enabled = true;
+            }
+        }
+
+        private void frmColores_Load(object sender, EventArgs e)
+        {
+            cmdGrabar.Enabled = false;
+        }
     }
 }
