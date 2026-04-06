@@ -13,7 +13,7 @@ namespace pryEdDelgadoS
     {
         //Campo
         public string NomArchi="Colores.txt";
-         01
+        
         public void Grabar()
         {
             StreamWriter AD = new StreamWriter(NomArchi);
