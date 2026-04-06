@@ -16,5 +16,15 @@ namespace pryEdDelgadoS
         {
             InitializeComponent();
         }
+
+        private void frmMeses_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdGrabar_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

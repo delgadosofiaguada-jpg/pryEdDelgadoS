@@ -25,8 +25,11 @@ namespace pryEdDelgadoS
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
            clsArchivo x = new clsArchivo();
-            x.Grabar(txtNombreColor.Text);
-            MessageBox.Show("Datos Grabado!");
+            x.NomArchi = "Colores.txt"; 
+           x.Grabar(txtNombreColor.Text);
+           MessageBox.Show("Datos Grabados");
+            x.Recorrer(lstColores);
+
             txtNombreColor.Text = "";
         }
 

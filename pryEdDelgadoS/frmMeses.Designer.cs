@@ -84,6 +84,7 @@
             this.cmdGrabar.TabIndex = 4;
             this.cmdGrabar.Text = "Grabar";
             this.cmdGrabar.UseVisualStyleBackColor = false;
+            this.cmdGrabar.Click += new System.EventHandler(this.cmdGrabar_Click);
             // 
             // label1
             // 
@@ -110,6 +111,7 @@
             this.Name = "frmMeses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMeses";
+            this.Load += new System.EventHandler(this.frmMeses_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
