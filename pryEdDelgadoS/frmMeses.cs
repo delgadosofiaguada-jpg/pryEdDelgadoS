@@ -24,7 +24,12 @@ namespace pryEdDelgadoS
 
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
-           
+            clsArchivo meses = new clsArchivo();
+            meses.NomArchi = "Meses.txt";
+            meses.Grabar(txtNombreMes.Text);
+            MessageBox.Show("Datos Grabados");
+            meses.Recorrer(lstMeses);
+            txtNombreMes.Text = "";
         }
     }
 }

@@ -13,7 +13,13 @@ namespace pryEdDelgadoS
     {
         //Campo
         public string NomArchi="Colores.txt";
-        
+
+        public void BorrarTodo()
+        { 
+            StreamWriter AD = new StreamWriter(NomArchi, false); 
+            AD.Close();
+        }
+
         public void Grabar()
         {
             StreamWriter AD = new StreamWriter(NomArchi);
