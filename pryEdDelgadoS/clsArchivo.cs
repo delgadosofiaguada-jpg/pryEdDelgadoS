@@ -32,6 +32,16 @@ namespace pryEdDelgadoS
             AD.WriteLine(Dato);
             AD.Close();
         }
+        public void Grabar(String cod, String nom, String deu)
+        {
+            StreamWriter AD = new StreamWriter(NomArchi, true);
+            AD.Write(cod);
+            AD.Write(";");
+            AD.Write(nom);
+            AD.Write(";");
+            AD.WriteLine(deu);
+            AD.Close();
+        }
         public void Recorrer(ListBox lstDatos)
         { 
             lstDatos.Items.Clear();

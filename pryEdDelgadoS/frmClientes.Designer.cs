@@ -117,6 +117,7 @@
             this.cmdGrabarCliente.TabIndex = 7;
             this.cmdGrabarCliente.Text = "Grabar";
             this.cmdGrabarCliente.UseVisualStyleBackColor = false;
+            this.cmdGrabarCliente.Click += new System.EventHandler(this.cmdGrabarCliente_Click);
             // 
             // dgvClientes
             // 
