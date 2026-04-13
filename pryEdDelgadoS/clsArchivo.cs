@@ -42,6 +42,7 @@ namespace pryEdDelgadoS
             AD.WriteLine(deu);
             AD.Close();
         }
+
         public void Recorrer(ListBox lstDatos)
         { 
             lstDatos.Items.Clear();
@@ -56,7 +57,22 @@ namespace pryEdDelgadoS
             AD.Close();
         }
 
-         private void Recorrer(ComboBox cboDatos)
+        public void Recorrer(DataGridView Grilla)
+        {
+            
+            String DatoLeido = "";
+            Grilla.Rows.Clear();
+            StreamReader AD = new StreamReader(NomArchi);
+            DatoLeido = AD.ReadLine();
+            while (DatoLeido != null)
+            {
+                Grilla.Rows.Add(DatoLeido.Split(';'));
+                DatoLeido = AD.ReadLine();
+            }
+            AD.Close();
+        }
+
+        private void Recorrer(ComboBox cboDatos)
          {
             cboDatos.Items.Clear();
             String DatoLeido = "";

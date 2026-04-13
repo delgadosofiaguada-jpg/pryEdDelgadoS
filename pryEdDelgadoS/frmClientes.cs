@@ -26,10 +26,14 @@ namespace pryEdDelgadoS
         {
             clsArchivo clientes = new clsArchivo();
             clientes.NomArchi = "Clientes.csv";
-            clientes.Grabar(txtCaodigo.Text, txtNombreCliente.Text, txtDeuda.Text);
-            MessageBox.Show("Datos Grabados");
-            //clientes.Recorrer(lstCarreras);
-            //txtCarrera.Text = "";
+            clientes.Grabar(mtbCodigoCliente.Text, txtNombreCliente.Text, txtDeuda.Text);
+            clientes.Recorrer(dgvClientes);
+
+        }
+
+        private void frmClientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
