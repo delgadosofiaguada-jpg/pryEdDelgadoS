@@ -36,11 +36,11 @@
             this.txtNombreAlumno = new System.Windows.Forms.TextBox();
             this.cmbCarrera = new System.Windows.Forms.ComboBox();
             this.cmdGrabar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvAlumnos = new System.Windows.Forms.DataGridView();
             this.ClCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClCarrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTituloAlumnos
@@ -102,10 +102,17 @@
             // cmbCarrera
             // 
             this.cmbCarrera.FormattingEnabled = true;
+            this.cmbCarrera.Items.AddRange(new object[] {
+            "Ingenieria en Sistemas",
+            "Diseño Industrial",
+            "Comercio internacional",
+            "Marketing",
+            "Programacion"});
             this.cmbCarrera.Location = new System.Drawing.Point(116, 167);
             this.cmbCarrera.Name = "cmbCarrera";
             this.cmbCarrera.Size = new System.Drawing.Size(209, 21);
             this.cmbCarrera.TabIndex = 6;
+            this.cmbCarrera.SelectedIndexChanged += new System.EventHandler(this.cmbCarrera_SelectedIndexChanged);
             // 
             // cmdGrabar
             // 
@@ -119,17 +126,17 @@
             this.cmdGrabar.UseVisualStyleBackColor = false;
             this.cmdGrabar.Click += new System.EventHandler(this.cmdGrabar_Click);
             // 
-            // dataGridView1
+            // dgvAlumnos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlumnos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClCodigo,
             this.ClNombre,
             this.ClCarrera});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 244);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(313, 150);
-            this.dataGridView1.TabIndex = 8;
+            this.dgvAlumnos.Location = new System.Drawing.Point(12, 244);
+            this.dgvAlumnos.Name = "dgvAlumnos";
+            this.dgvAlumnos.Size = new System.Drawing.Size(313, 150);
+            this.dgvAlumnos.TabIndex = 8;
             // 
             // ClCodigo
             // 
@@ -152,7 +159,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(337, 406);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvAlumnos);
             this.Controls.Add(this.cmdGrabar);
             this.Controls.Add(this.cmbCarrera);
             this.Controls.Add(this.txtNombreAlumno);
@@ -164,7 +171,8 @@
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAlumnos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmAlumnos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,7 +188,7 @@
         private System.Windows.Forms.TextBox txtNombreAlumno;
         private System.Windows.Forms.ComboBox cmbCarrera;
         private System.Windows.Forms.Button cmdGrabar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvAlumnos;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClCarrera;

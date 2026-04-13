@@ -19,6 +19,19 @@ namespace pryEdDelgadoS
 
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
+            clsArchivo alumnos = new clsArchivo();
+            alumnos.NomArchi = "Alumnos.csv";
+            alumnos.Grabar(mtbCodigoAlumno.Text, txtNombreAlumno.Text, cmbCarrera.Text);
+            alumnos.Recorrer(dgvAlumnos);
+        }
+
+        private void frmAlumnos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbCarrera_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
