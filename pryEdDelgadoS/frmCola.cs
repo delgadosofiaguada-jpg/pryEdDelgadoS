@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace pryEdDelgadoS
 {
-    public partial class frmDatosdelDesarrollador : Form
+    public partial class frmCola : Form
     {
-        public frmDatosdelDesarrollador()
+        public frmCola()
         {
             InitializeComponent();
         }
 
-        private void lblTituloDatosP_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblFechaNacimiento_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
         {
 
         }
