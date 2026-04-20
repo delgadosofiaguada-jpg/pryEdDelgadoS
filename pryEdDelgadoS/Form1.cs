@@ -31,5 +31,15 @@ namespace pryEdDelgadoS
         {
 
         }
+
+        private void lblCarreraaa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmDatosdelDesarrollador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
