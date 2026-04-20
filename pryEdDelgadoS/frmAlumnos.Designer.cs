@@ -102,12 +102,6 @@
             // cmbCarrera
             // 
             this.cmbCarrera.FormattingEnabled = true;
-            this.cmbCarrera.Items.AddRange(new object[] {
-            "Ingenieria en Sistemas",
-            "Diseño Industrial",
-            "Comercio internacional",
-            "Marketing",
-            "Programacion"});
             this.cmbCarrera.Location = new System.Drawing.Point(116, 167);
             this.cmbCarrera.Name = "cmbCarrera";
             this.cmbCarrera.Size = new System.Drawing.Size(209, 21);

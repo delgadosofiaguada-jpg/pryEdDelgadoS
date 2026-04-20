@@ -21,14 +21,23 @@ namespace pryEdDelgadoS
         {
             clsArchivo alumnos = new clsArchivo();
             alumnos.NomArchi = "Alumnos.csv";
+
+            // Solo grabamos y actualizamos la grilla
             alumnos.Grabar(mtbCodigoAlumno.Text, txtNombreAlumno.Text, cmbCarrera.Text);
             alumnos.Recorrer(dgvAlumnos);
+
         }
+        
 
         private void frmAlumnos_Load(object sender, EventArgs e)
         {
-
+            dgvAlumnos.Rows.Clear();
+            clsArchivo carreras = new clsArchivo();
+            carreras.NomArchi = "Carrera.csv";
+            carreras.Recorrer(cmbCarrera);
         }
+
+
 
         private void cmbCarrera_SelectedIndexChanged(object sender, EventArgs e)
         {

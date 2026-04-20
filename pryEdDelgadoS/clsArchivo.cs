@@ -12,11 +12,11 @@ namespace pryEdDelgadoS
     internal class clsArchivo
     {
         //Campo
-        public string NomArchi="Colores.txt";
+        public string NomArchi = "Colores.txt";
 
         public void BorrarTodo()
-        { 
-            StreamWriter AD = new StreamWriter(NomArchi, false); 
+        {
+            StreamWriter AD = new StreamWriter(NomArchi, false);
             AD.Close();
         }
 
@@ -44,9 +44,9 @@ namespace pryEdDelgadoS
         }
 
         public void Recorrer(ListBox lstDatos)
-        { 
+        {
             lstDatos.Items.Clear();
-            String DatoLeido="";
+            String DatoLeido = "";
             StreamReader AD = new StreamReader(NomArchi);
             DatoLeido = AD.ReadLine();
             while (DatoLeido != null)
@@ -59,7 +59,7 @@ namespace pryEdDelgadoS
 
         public void Recorrer(DataGridView Grilla)
         {
-            
+
             String DatoLeido = "";
             Grilla.Rows.Clear();
             StreamReader AD = new StreamReader(NomArchi);
@@ -72,8 +72,8 @@ namespace pryEdDelgadoS
             AD.Close();
         }
 
-        private void Recorrer(ComboBox cboDatos)
-         {
+        public void Recorrer(ComboBox cboDatos)
+        {
             cboDatos.Items.Clear();
             String DatoLeido = "";
             StreamReader AD = new StreamReader(NomArchi);
@@ -85,8 +85,8 @@ namespace pryEdDelgadoS
             }
             AD.Close();
         }
-    }
-}
+
+    }}
 
 
 
