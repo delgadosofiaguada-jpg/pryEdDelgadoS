@@ -30,7 +30,7 @@
         {
             this.lblNombreColor = new System.Windows.Forms.Label();
             this.txtNombreColor = new System.Windows.Forms.TextBox();
-            this.cmdListar = new System.Windows.Forms.Button();
+            this.cmdLimpiar = new System.Windows.Forms.Button();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.lstColores = new System.Windows.Forms.ListBox();
             this.lblTituloColor = new System.Windows.Forms.Label();
@@ -54,16 +54,17 @@
             this.txtNombreColor.TabIndex = 1;
             this.txtNombreColor.TextChanged += new System.EventHandler(this.txtNombreColor_TextChanged);
             // 
-            // cmdListar
+            // cmdLimpiar
             // 
-            this.cmdListar.BackColor = System.Drawing.Color.White;
-            this.cmdListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdListar.Location = new System.Drawing.Point(15, 109);
-            this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(93, 23);
-            this.cmdListar.TabIndex = 2;
-            this.cmdListar.Text = "Listar";
-            this.cmdListar.UseVisualStyleBackColor = false;
+            this.cmdLimpiar.BackColor = System.Drawing.Color.White;
+            this.cmdLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLimpiar.Location = new System.Drawing.Point(15, 109);
+            this.cmdLimpiar.Name = "cmdLimpiar";
+            this.cmdLimpiar.Size = new System.Drawing.Size(93, 23);
+            this.cmdLimpiar.TabIndex = 2;
+            this.cmdLimpiar.Text = "Limpiar";
+            this.cmdLimpiar.UseVisualStyleBackColor = false;
+            this.cmdLimpiar.Click += new System.EventHandler(this.cmdLimpiar_Click);
             // 
             // cmdGrabar
             // 
@@ -108,7 +109,7 @@
             this.Controls.Add(this.lblTituloColor);
             this.Controls.Add(this.lstColores);
             this.Controls.Add(this.cmdGrabar);
-            this.Controls.Add(this.cmdListar);
+            this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.txtNombreColor);
             this.Controls.Add(this.lblNombreColor);
             this.Name = "frmColores";
@@ -124,7 +125,7 @@
 
         private System.Windows.Forms.Label lblNombreColor;
         private System.Windows.Forms.TextBox txtNombreColor;
-        private System.Windows.Forms.Button cmdListar;
+        private System.Windows.Forms.Button cmdLimpiar;
         private System.Windows.Forms.Button cmdGrabar;
         private System.Windows.Forms.ListBox lstColores;
         private System.Windows.Forms.Label lblTituloColor;

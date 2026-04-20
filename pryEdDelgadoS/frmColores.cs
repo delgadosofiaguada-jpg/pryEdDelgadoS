@@ -49,5 +49,16 @@ namespace pryEdDelgadoS
         {
             cmdGrabar.Enabled = false;
         }
+
+        private void cmdLimpiar_Click(object sender, EventArgs e)
+        {
+           
+            clsArchivo x = new clsArchivo();
+            x.NomArchi = "Colores.txt";
+            x.BorrarTodo();
+            x.Recorrer(lstColores);
+            MessageBox.Show("Datos Borrados");
+            txtNombreColor.Clear();
+        }
     }
 }

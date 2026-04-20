@@ -40,6 +40,7 @@
             this.clCódigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClDeuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmdLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,12 +147,25 @@
             this.ClDeuda.HeaderText = "Deuda";
             this.ClDeuda.Name = "ClDeuda";
             // 
+            // cmdLimpiar
+            // 
+            this.cmdLimpiar.BackColor = System.Drawing.Color.White;
+            this.cmdLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLimpiar.Location = new System.Drawing.Point(141, 217);
+            this.cmdLimpiar.Name = "cmdLimpiar";
+            this.cmdLimpiar.Size = new System.Drawing.Size(94, 23);
+            this.cmdLimpiar.TabIndex = 9;
+            this.cmdLimpiar.Text = "Limpiar";
+            this.cmdLimpiar.UseVisualStyleBackColor = false;
+            this.cmdLimpiar.Click += new System.EventHandler(this.cmdLimpiar_Click);
+            // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(365, 422);
+            this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.cmdGrabarCliente);
             this.Controls.Add(this.txtDeuda);
@@ -185,5 +199,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clCódigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClDeuda;
+        private System.Windows.Forms.Button cmdLimpiar;
     }
 }

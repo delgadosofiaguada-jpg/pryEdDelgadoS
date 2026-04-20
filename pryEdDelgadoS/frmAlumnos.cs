@@ -43,5 +43,19 @@ namespace pryEdDelgadoS
         {
 
         }
+
+        private void cmdLimpiar_Click(object sender, EventArgs e)
+        {
+            
+            clsArchivo x = new clsArchivo();
+            x.NomArchi = "Alumnos.csv";
+            x.BorrarTodo();
+            x.Recorrer(dgvAlumnos);
+            MessageBox.Show("Datos Borrados");
+            mtbCodigoAlumno.Clear();
+            txtNombreAlumno.Clear();
+            cmbCarrera.SelectedIndex = -1;
+
+        }
     }
 }

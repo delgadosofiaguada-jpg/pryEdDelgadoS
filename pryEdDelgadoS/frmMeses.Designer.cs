@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmdListar = new System.Windows.Forms.Button();
+            this.cmdLimpiar = new System.Windows.Forms.Button();
             this.lblNombreMes = new System.Windows.Forms.Label();
             this.lstMeses = new System.Windows.Forms.ListBox();
             this.txtNombreMes = new System.Windows.Forms.TextBox();
@@ -36,16 +36,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cmdListar
+            // cmdLimpiar
             // 
-            this.cmdListar.BackColor = System.Drawing.Color.White;
-            this.cmdListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdListar.Location = new System.Drawing.Point(15, 97);
-            this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(94, 23);
-            this.cmdListar.TabIndex = 0;
-            this.cmdListar.Text = "Listar";
-            this.cmdListar.UseVisualStyleBackColor = false;
+            this.cmdLimpiar.BackColor = System.Drawing.Color.White;
+            this.cmdLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLimpiar.Location = new System.Drawing.Point(15, 97);
+            this.cmdLimpiar.Name = "cmdLimpiar";
+            this.cmdLimpiar.Size = new System.Drawing.Size(94, 23);
+            this.cmdLimpiar.TabIndex = 0;
+            this.cmdLimpiar.Text = "Limpiar";
+            this.cmdLimpiar.UseVisualStyleBackColor = false;
+            this.cmdLimpiar.Click += new System.EventHandler(this.cmdLimpiar_Click);
             // 
             // lblNombreMes
             // 
@@ -107,7 +108,7 @@
             this.Controls.Add(this.txtNombreMes);
             this.Controls.Add(this.lstMeses);
             this.Controls.Add(this.lblNombreMes);
-            this.Controls.Add(this.cmdListar);
+            this.Controls.Add(this.cmdLimpiar);
             this.Name = "frmMeses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMeses";
@@ -119,7 +120,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button cmdListar;
+        private System.Windows.Forms.Button cmdLimpiar;
         private System.Windows.Forms.Label lblNombreMes;
         private System.Windows.Forms.ListBox lstMeses;
         private System.Windows.Forms.TextBox txtNombreMes;

@@ -31,5 +31,15 @@ namespace pryEdDelgadoS
             meses.Recorrer(lstMeses);
             txtNombreMes.Text = "";
         }
+
+        private void cmdLimpiar_Click(object sender, EventArgs e)
+        {
+            clsArchivo meses = new clsArchivo();
+            meses.NomArchi = "Meses.txt";
+            meses.BorrarTodo();
+            meses.Recorrer(lstMeses);
+            MessageBox.Show("Datos Borrados");
+            txtNombreMes.Clear();
+        }
     }
 }
