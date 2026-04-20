@@ -17,8 +17,8 @@ namespace pryEdDelgadoS
         //Propiedades del nodo
         public Int32 Codigo
        { 
-            get { return cod;}
-            set { cod = value;}
+            get { return cod; }//Tomo el valor de un campo
+            set { cod = value;}//Asigno un valor a un campo
        }
 
        public String Nombre

@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.gbNuevoElemento = new System.Windows.Forms.GroupBox();
-            this.lblCodigo1 = new System.Windows.Forms.Label();
-            this.lblNombre1 = new System.Windows.Forms.Label();
-            this.lblTramite1 = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtTramite = new System.Windows.Forms.TextBox();
             this.cmdAgregar = new System.Windows.Forms.Button();
+            this.txtTramite = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.lblTramite1 = new System.Windows.Forms.Label();
+            this.lblNombre1 = new System.Windows.Forms.Label();
+            this.lblCodigo1 = new System.Windows.Forms.Label();
             this.gbEliminado = new System.Windows.Forms.GroupBox();
+            this.lblTram = new System.Windows.Forms.Label();
+            this.lblNom = new System.Windows.Forms.Label();
+            this.lblCod = new System.Windows.Forms.Label();
             this.cmdEliminar = new System.Windows.Forms.Button();
             this.lblTramite2 = new System.Windows.Forms.Label();
             this.lblNombre2 = new System.Windows.Forms.Label();
             this.lblCodigo2 = new System.Windows.Forms.Label();
-            this.lblCod = new System.Windows.Forms.Label();
-            this.lblNom = new System.Windows.Forms.Label();
-            this.lblTram = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbListado = new System.Windows.Forms.GroupBox();
-            this.dgvGrilla = new System.Windows.Forms.DataGridView();
             this.lstLista = new System.Windows.Forms.ListBox();
+            this.dgvGrilla = new System.Windows.Forms.DataGridView();
             this.clCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,23 +75,36 @@
             this.gbNuevoElemento.TabStop = false;
             this.gbNuevoElemento.Text = "Nuevo elemento";
             // 
-            // lblCodigo1
+            // cmdAgregar
             // 
-            this.lblCodigo1.AutoSize = true;
-            this.lblCodigo1.Location = new System.Drawing.Point(6, 49);
-            this.lblCodigo1.Name = "lblCodigo1";
-            this.lblCodigo1.Size = new System.Drawing.Size(49, 15);
-            this.lblCodigo1.TabIndex = 0;
-            this.lblCodigo1.Text = "Código:";
+            this.cmdAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAgregar.Location = new System.Drawing.Point(102, 164);
+            this.cmdAgregar.Name = "cmdAgregar";
+            this.cmdAgregar.Size = new System.Drawing.Size(87, 27);
+            this.cmdAgregar.TabIndex = 6;
+            this.cmdAgregar.Text = "Agregar";
+            this.cmdAgregar.UseVisualStyleBackColor = true;
             // 
-            // lblNombre1
+            // txtTramite
             // 
-            this.lblNombre1.AutoSize = true;
-            this.lblNombre1.Location = new System.Drawing.Point(6, 87);
-            this.lblNombre1.Name = "lblNombre1";
-            this.lblNombre1.Size = new System.Drawing.Size(55, 15);
-            this.lblNombre1.TabIndex = 1;
-            this.lblNombre1.Text = "Nombre:";
+            this.txtTramite.Location = new System.Drawing.Point(74, 121);
+            this.txtTramite.Name = "txtTramite";
+            this.txtTramite.Size = new System.Drawing.Size(115, 21);
+            this.txtTramite.TabIndex = 5;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(74, 80);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(115, 21);
+            this.txtNombre.TabIndex = 4;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(74, 43);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(115, 21);
+            this.txtCodigo.TabIndex = 3;
             // 
             // lblTramite1
             // 
@@ -102,36 +115,23 @@
             this.lblTramite1.TabIndex = 2;
             this.lblTramite1.Text = "Trámite:";
             // 
-            // txtCodigo
+            // lblNombre1
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(74, 43);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(115, 21);
-            this.txtCodigo.TabIndex = 3;
+            this.lblNombre1.AutoSize = true;
+            this.lblNombre1.Location = new System.Drawing.Point(6, 87);
+            this.lblNombre1.Name = "lblNombre1";
+            this.lblNombre1.Size = new System.Drawing.Size(55, 15);
+            this.lblNombre1.TabIndex = 1;
+            this.lblNombre1.Text = "Nombre:";
             // 
-            // txtNombre
+            // lblCodigo1
             // 
-            this.txtNombre.Location = new System.Drawing.Point(74, 80);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(115, 21);
-            this.txtNombre.TabIndex = 4;
-            // 
-            // txtTramite
-            // 
-            this.txtTramite.Location = new System.Drawing.Point(74, 121);
-            this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(115, 21);
-            this.txtTramite.TabIndex = 5;
-            // 
-            // cmdAgregar
-            // 
-            this.cmdAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdAgregar.Location = new System.Drawing.Point(102, 164);
-            this.cmdAgregar.Name = "cmdAgregar";
-            this.cmdAgregar.Size = new System.Drawing.Size(87, 27);
-            this.cmdAgregar.TabIndex = 6;
-            this.cmdAgregar.Text = "Agregar";
-            this.cmdAgregar.UseVisualStyleBackColor = true;
+            this.lblCodigo1.AutoSize = true;
+            this.lblCodigo1.Location = new System.Drawing.Point(6, 49);
+            this.lblCodigo1.Name = "lblCodigo1";
+            this.lblCodigo1.Size = new System.Drawing.Size(49, 15);
+            this.lblCodigo1.TabIndex = 0;
+            this.lblCodigo1.Text = "Código:";
             // 
             // gbEliminado
             // 
@@ -150,6 +150,36 @@
             this.gbEliminado.TabStop = false;
             this.gbEliminado.Text = " Elemento eliminado";
             this.gbEliminado.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblTram
+            // 
+            this.lblTram.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTram.Location = new System.Drawing.Point(74, 117);
+            this.lblTram.Name = "lblTram";
+            this.lblTram.Size = new System.Drawing.Size(115, 24);
+            this.lblTram.TabIndex = 9;
+            this.lblTram.Text = "                               ";
+            this.lblTram.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNom
+            // 
+            this.lblNom.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblNom.Location = new System.Drawing.Point(74, 78);
+            this.lblNom.Name = "lblNom";
+            this.lblNom.Size = new System.Drawing.Size(115, 24);
+            this.lblNom.TabIndex = 8;
+            this.lblNom.Text = "                               ";
+            this.lblNom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCod
+            // 
+            this.lblCod.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCod.Location = new System.Drawing.Point(74, 40);
+            this.lblCod.Name = "lblCod";
+            this.lblCod.Size = new System.Drawing.Size(115, 24);
+            this.lblCod.TabIndex = 7;
+            this.lblCod.Text = "                               ";
+            this.lblCod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmdEliminar
             // 
@@ -188,36 +218,6 @@
             this.lblCodigo2.TabIndex = 0;
             this.lblCodigo2.Text = "Código:";
             // 
-            // lblCod
-            // 
-            this.lblCod.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCod.Location = new System.Drawing.Point(74, 40);
-            this.lblCod.Name = "lblCod";
-            this.lblCod.Size = new System.Drawing.Size(115, 24);
-            this.lblCod.TabIndex = 7;
-            this.lblCod.Text = "                               ";
-            this.lblCod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblNom
-            // 
-            this.lblNom.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblNom.Location = new System.Drawing.Point(74, 78);
-            this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(115, 24);
-            this.lblNom.TabIndex = 8;
-            this.lblNom.Text = "                               ";
-            this.lblNom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTram
-            // 
-            this.lblTram.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTram.Location = new System.Drawing.Point(74, 117);
-            this.lblTram.Name = "lblTram";
-            this.lblTram.Size = new System.Drawing.Size(115, 24);
-            this.lblTram.TabIndex = 9;
-            this.lblTram.Text = "                               ";
-            this.lblTram.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::pryEdDelgadoS.Properties.Resources.coladatos;
@@ -242,18 +242,6 @@
             this.gbListado.Text = "Listado en una Lista y una Grilla";
             this.gbListado.Enter += new System.EventHandler(this.groupBox1_Enter_1);
             // 
-            // dgvGrilla
-            // 
-            this.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGrilla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clCodigo,
-            this.clNombre,
-            this.clTramite});
-            this.dgvGrilla.Location = new System.Drawing.Point(257, 31);
-            this.dgvGrilla.Name = "dgvGrilla";
-            this.dgvGrilla.Size = new System.Drawing.Size(393, 195);
-            this.dgvGrilla.TabIndex = 1;
-            // 
             // lstLista
             // 
             this.lstLista.FormattingEnabled = true;
@@ -263,10 +251,23 @@
             this.lstLista.Size = new System.Drawing.Size(210, 199);
             this.lstLista.TabIndex = 2;
             // 
+            // dgvGrilla
+            // 
+            this.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGrilla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clCodigo,
+            this.clNombre,
+            this.clTramite});
+            this.dgvGrilla.Location = new System.Drawing.Point(257, 31);
+            this.dgvGrilla.Name = "dgvGrilla";
+            this.dgvGrilla.Size = new System.Drawing.Size(411, 195);
+            this.dgvGrilla.TabIndex = 1;
+            // 
             // clCodigo
             // 
             this.clCodigo.HeaderText = "Código";
             this.clCodigo.Name = "clCodigo";
+            this.clCodigo.Width = 110;
             // 
             // clNombre
             // 
@@ -278,6 +279,7 @@
             // 
             this.clTramite.HeaderText = "Trámite";
             this.clTramite.Name = "clTramite";
+            this.clTramite.Width = 110;
             // 
             // frmCola
             // 
