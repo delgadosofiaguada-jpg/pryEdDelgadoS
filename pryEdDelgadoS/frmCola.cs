@@ -31,5 +31,46 @@ namespace pryEdDelgadoS
         {
 
         }
+        clsCola ColaEspera = new clsCola();
+        private void cmdAgregar_Click(object sender, EventArgs e)
+        {
+            clsNodo Persona = new clsNodo();
+            Persona.Codigo = Convert.ToInt32(txtCodigo.Text);
+            Persona.Nombre = txtNombre.Text;
+            Persona.Tramite = txtTramite.Text;
+
+            ColaEspera.Agregar(Persona);
+            ColaEspera.Recorrer(dgvGrilla);
+            ColaEspera.Recorrer("Cola.csv");
+            ColaEspera.Recorrer(lstLista);
+
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+
+
+        }
+
+        private void cmdEliminar_Click(object sender, EventArgs e)
+        {
+            if (ColaEspera.Primero != null)
+            {
+                lblCod.Text = Convert.ToString(ColaEspera.Primero.Codigo);
+                lblNom.Text = ColaEspera.Primero.Nombre;
+                lblTram.Text = ColaEspera.Primero.Tramite;
+
+                ColaEspera.Eliminar();
+                ColaEspera.Recorrer(dgvGrilla);
+                ColaEspera.Recorrer("Cola.csv");
+                ColaEspera.Recorrer(lstLista);
+            }
+             else
+             {
+                lblCod.Text = "";
+                lblNom.Text = "";
+                lblTram.Text = "";
+                MessageBox.Show("No hay personas para eliminar en la cola");
+             }
+        }
     }
 }

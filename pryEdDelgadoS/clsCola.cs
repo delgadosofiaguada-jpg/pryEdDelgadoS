@@ -10,9 +10,9 @@ namespace pryEdDelgadoS
 {
     internal class clsCola
     {
-       //Campos
-       private clsNodo pri;
-       private clsNodo ult;
+        //Campos
+        private clsNodo pri;
+        private clsNodo ult;
 
         //Propiedades
         public clsNodo Primero
@@ -47,7 +47,7 @@ namespace pryEdDelgadoS
             {
                 Primero = null;
                 Ultimo = null;
-                
+
             }
             else
             {
@@ -56,8 +56,8 @@ namespace pryEdDelgadoS
         }
 
         public void Recorrer(DataGridView Grilla)
-        { 
-            clsNodo aux= Primero;
+        {
+            clsNodo aux = Primero;
             Grilla.Rows.Clear();
             while (aux != null)
             {
@@ -87,7 +87,25 @@ namespace pryEdDelgadoS
                 aux = aux.Siguiente;
             }
         }
+
+        public void Recorrer(String NombreArchivo)
+        {
+            clsNodo aux= Primero;
+            StreamWriter AD = new StreamWriter(NombreArchivo, false, Encoding.UTF8);
+            AD.WriteLine("Lista de espera\n");
+            AD.WriteLine("Codigo,Nombre,Tramite");
+            while (aux != null)
+            {
+                AD.WriteLine(aux.Codigo);
+                AD.WriteLine(";");
+                AD.WriteLine(aux.Nombre);
+                AD.WriteLine(";");
+                AD.WriteLine(aux.Tramite);
+                aux = aux.Siguiente;
+            }
+             AD.Close();
+        }
+
+
     }
-
-
 }
