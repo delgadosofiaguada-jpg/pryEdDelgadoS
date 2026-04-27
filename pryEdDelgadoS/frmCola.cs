@@ -72,5 +72,10 @@ namespace pryEdDelgadoS
                 MessageBox.Show("No hay personas para eliminar en la cola");
              }
         }
+
+        private void frmCola_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

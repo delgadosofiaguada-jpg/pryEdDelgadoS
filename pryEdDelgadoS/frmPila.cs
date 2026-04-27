@@ -16,9 +16,22 @@ namespace pryEdDelgadoS
         {
             InitializeComponent();
         }
-
+        clsPila objPila = new clsPila();
         private void cmdAgregar_Click(object sender, EventArgs e)
         {
+            clsNodo x= new clsNodo();
+            x.Codigo = Convert.ToInt32(txtCodigo.Text);
+            x.Nombre = txtNombre.Text;
+            x.Tramite = txtTramite.Text;
+           
+            objPila.Agregar(x);
+            objPila.Recorrer(dgvGrilla);
+            objPila.Recorrer(lstPila);
+           //objPila.Recorrer("Pila.csv");
+
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
 
         }
     }
