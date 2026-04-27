@@ -78,5 +78,20 @@ namespace pryEdDelgadoS
             frmCola v = new frmCola();
             v.ShowDialog();
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila v = new frmPila();
+        }
+
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaSimple v = new frmListaSimple();
+        }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaDoble v = new frmListaDoble();
+        }
     }
 }
