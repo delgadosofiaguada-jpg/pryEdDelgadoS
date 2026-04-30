@@ -81,17 +81,20 @@ namespace pryEdDelgadoS
 
         private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPila v = new frmPila();
+            Form v = new frmPila();
+            v.ShowDialog();
         }
 
         private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmListaSimple v = new frmListaSimple();
+            Form v = new frmListaSimple();
+            v.ShowDialog();
         }
 
         private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmListaDoble v = new frmListaDoble();
+           Form v = new frmListaDoble();
+            v.ShowDialog();
         }
     }
 }

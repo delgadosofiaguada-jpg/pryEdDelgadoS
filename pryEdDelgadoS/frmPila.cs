@@ -34,5 +34,10 @@ namespace pryEdDelgadoS
             txtTramite.Text = "";
 
         }
+
+        private void frmPila_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
