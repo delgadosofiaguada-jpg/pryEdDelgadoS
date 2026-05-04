@@ -63,6 +63,24 @@ namespace pryEdDelgadoS
         {
             ValidarDatos();
         }
+
+        private void cmdEliminar_Click(object sender, EventArgs e)
+        {
+            if (objLista.Primero != null)
+            { 
+                Int32 x=Convert.ToInt32(cmbCodigo.Text);
+                objLista.Eliminar(x);
+                objLista.Recorrer(dgvGrilla);
+                objLista.Recorrer(lstLista);
+                objLista.Recorrer(cmbCodigo);
+                //objLista.Recorrer();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos para eliminar");
+            }
+            cmdEliminar.Enabled = false;
+        }
     }
 }
 

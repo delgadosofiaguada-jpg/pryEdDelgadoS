@@ -216,6 +216,7 @@
             this.cmdEliminar.TabIndex = 6;
             this.cmdEliminar.Text = "Eliminar";
             this.cmdEliminar.UseVisualStyleBackColor = true;
+            this.cmdEliminar.Click += new System.EventHandler(this.cmdEliminar_Click);
             // 
             // gbEliminado
             // 
