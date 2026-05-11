@@ -19,7 +19,7 @@ namespace pryEdDelgadoS
 
         private void txtNombreCliente_TextChanged(object sender, EventArgs e)
         {
-
+            Validar();
         }
 
         private void cmdGrabarCliente_Click(object sender, EventArgs e)
@@ -30,7 +30,20 @@ namespace pryEdDelgadoS
             clientes.Recorrer(dgvClientes);
 
         }
+        private void Validar()
+        {
 
+            if (mtbCodigoCliente.Text != "" &&
+                txtNombreCliente.Text != "" &&
+                txtDeuda.Text != "")
+            {
+                cmdGrabarCliente.Enabled = true;
+            }
+            else
+            {
+                cmdGrabarCliente.Enabled = false;
+            }
+        }
         private void frmClientes_Load(object sender, EventArgs e)
         {
 
@@ -46,6 +59,16 @@ namespace pryEdDelgadoS
             mtbCodigoCliente.Clear();
             txtNombreCliente.Clear();
             txtDeuda.Clear(); 
+        }
+
+        private void mtbCodigoCliente_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            Validar();
+        }
+
+        private void txtDeuda_TextChanged(object sender, EventArgs e)
+        {
+            Validar();
         }
     }
 }

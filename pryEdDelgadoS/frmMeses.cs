@@ -41,5 +41,17 @@ namespace pryEdDelgadoS
             MessageBox.Show("Datos Borrados");
             txtNombreMes.Clear();
         }
+
+        private void txtNombreMes_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreMes.Text.Trim() != "")
+            {
+                cmdGrabar.Enabled = true;
+            }
+            else
+            {
+                cmdGrabar.Enabled = false;
+            }
+        }
     }
 }

@@ -74,9 +74,11 @@
             this.gbNuevoElemento.TabIndex = 0;
             this.gbNuevoElemento.TabStop = false;
             this.gbNuevoElemento.Text = "Nuevo elemento";
+            this.gbNuevoElemento.Enter += new System.EventHandler(this.gbNuevoElemento_Enter);
             // 
             // cmdAgregar
             // 
+            this.cmdAgregar.Enabled = false;
             this.cmdAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdAgregar.Location = new System.Drawing.Point(102, 164);
             this.cmdAgregar.Name = "cmdAgregar";
@@ -92,6 +94,7 @@
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.Size = new System.Drawing.Size(115, 21);
             this.txtTramite.TabIndex = 5;
+            this.txtTramite.TextChanged += new System.EventHandler(this.txtTramite_TextChanged);
             // 
             // txtNombre
             // 
@@ -99,6 +102,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(115, 21);
             this.txtNombre.TabIndex = 4;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtCodigo
             // 
@@ -106,6 +110,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(115, 21);
             this.txtCodigo.TabIndex = 3;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // lblTramite1
             // 
@@ -144,7 +149,7 @@
             this.gbEliminado.Controls.Add(this.lblNombre2);
             this.gbEliminado.Controls.Add(this.lblCodigo2);
             this.gbEliminado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbEliminado.Location = new System.Drawing.Point(503, 27);
+            this.gbEliminado.Location = new System.Drawing.Point(516, 27);
             this.gbEliminado.Name = "gbEliminado";
             this.gbEliminado.Size = new System.Drawing.Size(195, 197);
             this.gbEliminado.TabIndex = 7;
@@ -238,7 +243,7 @@
             this.gbListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbListado.Location = new System.Drawing.Point(12, 250);
             this.gbListado.Name = "gbListado";
-            this.gbListado.Size = new System.Drawing.Size(686, 238);
+            this.gbListado.Size = new System.Drawing.Size(699, 238);
             this.gbListado.TabIndex = 7;
             this.gbListado.TabStop = false;
             this.gbListado.Text = "Listado en una Lista y una Grilla";
@@ -263,7 +268,7 @@
             this.dgvGrilla.Location = new System.Drawing.Point(257, 31);
             this.dgvGrilla.Name = "dgvGrilla";
             this.dgvGrilla.RowHeadersWidth = 51;
-            this.dgvGrilla.Size = new System.Drawing.Size(423, 195);
+            this.dgvGrilla.Size = new System.Drawing.Size(434, 195);
             this.dgvGrilla.TabIndex = 1;
             // 
             // clCodigo
@@ -271,28 +276,27 @@
             this.clCodigo.HeaderText = "Código";
             this.clCodigo.MinimumWidth = 6;
             this.clCodigo.Name = "clCodigo";
-            this.clCodigo.Width = 120;
             // 
             // clNombre
             // 
             this.clNombre.HeaderText = "Nombre";
             this.clNombre.MinimumWidth = 6;
             this.clNombre.Name = "clNombre";
-            this.clNombre.Width = 190;
+            this.clNombre.Width = 160;
             // 
             // clTramite
             // 
             this.clTramite.HeaderText = "Trámite";
             this.clTramite.MinimumWidth = 6;
             this.clTramite.Name = "clTramite";
-            this.clTramite.Width = 190;
+            this.clTramite.Width = 120;
             // 
             // frmCola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(721, 494);
+            this.ClientSize = new System.Drawing.Size(726, 494);
             this.Controls.Add(this.gbListado);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gbEliminado);

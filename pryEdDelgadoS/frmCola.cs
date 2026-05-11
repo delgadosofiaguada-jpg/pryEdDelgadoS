@@ -77,5 +77,38 @@ namespace pryEdDelgadoS
         {
 
         }
+        private void Validar()
+        {
+
+            if (txtCodigo.Text != "" &&
+                txtNombre.Text != "" &&
+                txtTramite.Text != "")
+            {
+                cmdAgregar.Enabled = true;
+            }
+            else
+            {
+                cmdAgregar.Enabled = false;
+            }
+        }
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            Validar();
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            Validar();
+        }
+
+        private void gbNuevoElemento_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTramite_TextChanged(object sender, EventArgs e)
+        {
+            Validar();
+        }
     }
 }

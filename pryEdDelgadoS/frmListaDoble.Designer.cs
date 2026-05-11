@@ -130,7 +130,7 @@
             // 
             this.cbCodigo.FormattingEnabled = true;
             this.cbCodigo.Location = new System.Drawing.Point(70, 35);
-            this.cbCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.cbCodigo.Name = "cbCodigo";
             this.cbCodigo.Size = new System.Drawing.Size(116, 23);
             this.cbCodigo.TabIndex = 7;
@@ -256,7 +256,7 @@
             // 
             this.rbDescendente.AutoSize = true;
             this.rbDescendente.Location = new System.Drawing.Point(28, 62);
-            this.rbDescendente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbDescendente.Margin = new System.Windows.Forms.Padding(2);
             this.rbDescendente.Name = "rbDescendente";
             this.rbDescendente.Size = new System.Drawing.Size(98, 19);
             this.rbDescendente.TabIndex = 1;
@@ -268,7 +268,7 @@
             // 
             this.rbAscendente.AutoSize = true;
             this.rbAscendente.Location = new System.Drawing.Point(28, 28);
-            this.rbAscendente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbAscendente.Margin = new System.Windows.Forms.Padding(2);
             this.rbAscendente.Name = "rbAscendente";
             this.rbAscendente.Size = new System.Drawing.Size(89, 19);
             this.rbAscendente.TabIndex = 0;
@@ -286,9 +286,10 @@
             this.Controls.Add(this.gbEliminado);
             this.Controls.Add(this.gbNuevoElemento);
             this.Controls.Add(this.pbListaDoble);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmListaDoble";
             this.Text = "frmListaDoble";
+            this.Load += new System.EventHandler(this.frmListaDoble_Load);
             this.gbListado.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();
             this.gbEliminado.ResumeLayout(false);
