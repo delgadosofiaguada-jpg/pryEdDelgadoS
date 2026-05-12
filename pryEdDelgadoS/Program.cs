@@ -16,7 +16,7 @@ namespace pryEdDelgadoS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmEstructuradeDatos());
+            Application.Run(new EstructuradeDatos());
         }
     }
 }

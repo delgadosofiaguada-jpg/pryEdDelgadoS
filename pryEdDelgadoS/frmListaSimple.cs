@@ -90,7 +90,14 @@ namespace pryEdDelgadoS
 
         private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbCodigo.Text != "")
+            {
+                cmdEliminar.Enabled = true;
+            }
+            else
+            {
+                cmdEliminar.Enabled = false;
+            }
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListaSimple));
             this.gbListado = new System.Windows.Forms.GroupBox();
             this.lstLista = new System.Windows.Forms.ListBox();
             this.dgvGrilla = new System.Windows.Forms.DataGridView();
@@ -75,7 +76,7 @@
             this.lstLista.Location = new System.Drawing.Point(8, 38);
             this.lstLista.Margin = new System.Windows.Forms.Padding(4);
             this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(313, 220);
+            this.lstLista.Size = new System.Drawing.Size(313, 238);
             this.lstLista.TabIndex = 2;
             // 
             // dgvGrilla
@@ -271,10 +272,11 @@
             this.Controls.Add(this.gbEliminado);
             this.Controls.Add(this.gbNuevoElemento);
             this.Controls.Add(this.pbListaSimple);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmListaSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmListaSimple";
+            this.Text = "Listado: Lista Simple";
             this.Load += new System.EventHandler(this.frmListaSimple_Load);
             this.gbListado.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();

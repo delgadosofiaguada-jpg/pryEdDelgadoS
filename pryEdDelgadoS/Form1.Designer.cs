@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDatosdelDesarrollador));
             this.lblNombreApellido = new System.Windows.Forms.Label();
             this.lblTituloDatosP = new System.Windows.Forms.Label();
             this.txtMail = new System.Windows.Forms.Label();
@@ -94,7 +95,7 @@
             this.cmdSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdSalir.ForeColor = System.Drawing.Color.Coral;
             this.cmdSalir.Location = new System.Drawing.Point(369, 406);
-            this.cmdSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdSalir.Margin = new System.Windows.Forms.Padding(4);
             this.cmdSalir.Name = "cmdSalir";
             this.cmdSalir.Size = new System.Drawing.Size(100, 30);
             this.cmdSalir.TabIndex = 14;
@@ -106,7 +107,7 @@
             // 
             this.pictureBox1.Image = global::pryEdDelgadoS.Properties.Resources.wii;
             this.pictureBox1.Location = new System.Drawing.Point(355, 100);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(115, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -176,10 +177,11 @@
             this.Controls.Add(this.txtMail);
             this.Controls.Add(this.lblTituloDatosP);
             this.Controls.Add(this.lblNombreApellido);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDatosdelDesarrollador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ss";
+            this.Text = "Datos del desarrollador";
             this.Load += new System.EventHandler(this.frmDatosdelDesarrollador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

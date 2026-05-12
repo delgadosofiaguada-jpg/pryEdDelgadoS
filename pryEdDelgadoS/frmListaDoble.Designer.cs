@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListaDoble));
             this.gbListado = new System.Windows.Forms.GroupBox();
             this.lstLista = new System.Windows.Forms.ListBox();
             this.dgvGrilla = new System.Windows.Forms.DataGridView();
@@ -317,10 +318,11 @@
             this.Controls.Add(this.gbEliminado);
             this.Controls.Add(this.gbNuevoElemento);
             this.Controls.Add(this.pbListaDoble);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmListaDoble";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmListaDoble";
+            this.Text = "Listado: Lista Doble";
             this.Load += new System.EventHandler(this.frmListaDoble_Load);
             this.gbListado.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();

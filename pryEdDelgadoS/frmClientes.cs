@@ -28,7 +28,9 @@ namespace pryEdDelgadoS
             clientes.NomArchi = "Clientes.csv";
             clientes.Grabar(mtbCodigoCliente.Text, txtNombreCliente.Text, txtDeuda.Text);
             clientes.Recorrer(dgvClientes);
-
+            mtbCodigoCliente.Clear();
+            txtNombreCliente.Clear();
+            txtDeuda.Clear();
         }
         private void Validar()
         {

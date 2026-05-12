@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPila));
             this.pbPila = new System.Windows.Forms.PictureBox();
             this.gbNuevoElemento = new System.Windows.Forms.GroupBox();
             this.cmdAgregar = new System.Windows.Forms.Button();
@@ -62,7 +63,7 @@
             // 
             this.pbPila.Image = global::pryEdDelgadoS.Properties.Resources.pilaaaaaaaaa;
             this.pbPila.Location = new System.Drawing.Point(28, 27);
-            this.pbPila.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbPila.Margin = new System.Windows.Forms.Padding(4);
             this.pbPila.Name = "pbPila";
             this.pbPila.Size = new System.Drawing.Size(248, 220);
             this.pbPila.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -80,9 +81,9 @@
             this.gbNuevoElemento.Controls.Add(this.lblCodigo);
             this.gbNuevoElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbNuevoElemento.Location = new System.Drawing.Point(336, 27);
-            this.gbNuevoElemento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbNuevoElemento.Margin = new System.Windows.Forms.Padding(4);
             this.gbNuevoElemento.Name = "gbNuevoElemento";
-            this.gbNuevoElemento.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbNuevoElemento.Padding = new System.Windows.Forms.Padding(4);
             this.gbNuevoElemento.Size = new System.Drawing.Size(273, 242);
             this.gbNuevoElemento.TabIndex = 1;
             this.gbNuevoElemento.TabStop = false;
@@ -94,7 +95,7 @@
             this.cmdAgregar.Enabled = false;
             this.cmdAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdAgregar.Location = new System.Drawing.Point(159, 202);
-            this.cmdAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.cmdAgregar.Name = "cmdAgregar";
             this.cmdAgregar.Size = new System.Drawing.Size(100, 33);
             this.cmdAgregar.TabIndex = 6;
@@ -105,7 +106,7 @@
             // txtTramite
             // 
             this.txtTramite.Location = new System.Drawing.Point(101, 139);
-            this.txtTramite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTramite.Margin = new System.Windows.Forms.Padding(4);
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.Size = new System.Drawing.Size(156, 24);
             this.txtTramite.TabIndex = 5;
@@ -114,7 +115,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(101, 87);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(156, 24);
             this.txtNombre.TabIndex = 4;
@@ -123,7 +124,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(101, 34);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(156, 24);
             this.txtCodigo.TabIndex = 3;
@@ -169,10 +170,10 @@
             this.gbEliminado.Controls.Add(this.lblNombre2);
             this.gbEliminado.Controls.Add(this.lblCodigo2);
             this.gbEliminado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbEliminado.Location = new System.Drawing.Point(676, 27);
-            this.gbEliminado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbEliminado.Location = new System.Drawing.Point(691, 27);
+            this.gbEliminado.Margin = new System.Windows.Forms.Padding(4);
             this.gbEliminado.Name = "gbEliminado";
-            this.gbEliminado.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbEliminado.Padding = new System.Windows.Forms.Padding(4);
             this.gbEliminado.Size = new System.Drawing.Size(267, 242);
             this.gbEliminado.TabIndex = 8;
             this.gbEliminado.TabStop = false;
@@ -215,7 +216,7 @@
             // 
             this.cmdEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdEliminar.Location = new System.Drawing.Point(136, 202);
-            this.cmdEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.cmdEliminar.Name = "cmdEliminar";
             this.cmdEliminar.Size = new System.Drawing.Size(116, 33);
             this.cmdEliminar.TabIndex = 6;
@@ -259,10 +260,10 @@
             this.gbListado.Controls.Add(this.dgvGrilla);
             this.gbListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbListado.Location = new System.Drawing.Point(28, 277);
-            this.gbListado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbListado.Margin = new System.Windows.Forms.Padding(4);
             this.gbListado.Name = "gbListado";
-            this.gbListado.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gbListado.Size = new System.Drawing.Size(915, 293);
+            this.gbListado.Padding = new System.Windows.Forms.Padding(4);
+            this.gbListado.Size = new System.Drawing.Size(930, 309);
             this.gbListado.TabIndex = 9;
             this.gbListado.TabStop = false;
             this.gbListado.Text = "Listado en una Lista y una Grilla";
@@ -272,9 +273,9 @@
             this.lstPila.FormattingEnabled = true;
             this.lstPila.ItemHeight = 18;
             this.lstPila.Location = new System.Drawing.Point(8, 38);
-            this.lstPila.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstPila.Margin = new System.Windows.Forms.Padding(4);
             this.lstPila.Name = "lstPila";
-            this.lstPila.Size = new System.Drawing.Size(279, 220);
+            this.lstPila.Size = new System.Drawing.Size(279, 256);
             this.lstPila.TabIndex = 2;
             // 
             // dgvGrilla
@@ -285,10 +286,10 @@
             this.clNombre,
             this.clTramite});
             this.dgvGrilla.Location = new System.Drawing.Point(343, 38);
-            this.dgvGrilla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvGrilla.Margin = new System.Windows.Forms.Padding(4);
             this.dgvGrilla.Name = "dgvGrilla";
             this.dgvGrilla.RowHeadersWidth = 51;
-            this.dgvGrilla.Size = new System.Drawing.Size(557, 240);
+            this.dgvGrilla.Size = new System.Drawing.Size(572, 256);
             this.dgvGrilla.TabIndex = 1;
             // 
             // clCodigo
@@ -296,14 +297,13 @@
             this.clCodigo.HeaderText = "Código";
             this.clCodigo.MinimumWidth = 6;
             this.clCodigo.Name = "clCodigo";
-            this.clCodigo.Width = 190;
             // 
             // clNombre
             // 
             this.clNombre.HeaderText = "Nombre";
             this.clNombre.MinimumWidth = 6;
             this.clNombre.Name = "clNombre";
-            this.clNombre.Width = 190;
+            this.clNombre.Width = 160;
             // 
             // clTramite
             // 
@@ -322,10 +322,11 @@
             this.Controls.Add(this.gbEliminado);
             this.Controls.Add(this.gbNuevoElemento);
             this.Controls.Add(this.pbPila);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPila";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPila";
+            this.Text = "Listado Pila";
             this.Load += new System.EventHandler(this.frmPila_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPila)).EndInit();
             this.gbNuevoElemento.ResumeLayout(false);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryEdDelgadoS
 {
-    public partial class frmEstructuradeDatos : Form
+    public partial class EstructuradeDatos : Form
     {
-        public frmEstructuradeDatos()
+        public EstructuradeDatos()
         {
             InitializeComponent();
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCarreras));
             this.lblCarrera = new System.Windows.Forms.Label();
             this.lblTituloCarrera = new System.Windows.Forms.Label();
             this.txtCarrera = new System.Windows.Forms.TextBox();
@@ -40,9 +41,10 @@
             // 
             this.lblCarrera.AutoSize = true;
             this.lblCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCarrera.Location = new System.Drawing.Point(17, 61);
+            this.lblCarrera.Location = new System.Drawing.Point(23, 75);
+            this.lblCarrera.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCarrera.Name = "lblCarrera";
-            this.lblCarrera.Size = new System.Drawing.Size(51, 15);
+            this.lblCarrera.Size = new System.Drawing.Size(62, 18);
             this.lblCarrera.TabIndex = 0;
             this.lblCarrera.Text = "Carrera;";
             // 
@@ -50,17 +52,19 @@
             // 
             this.lblTituloCarrera.AutoSize = true;
             this.lblTituloCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloCarrera.Location = new System.Drawing.Point(12, 20);
+            this.lblTituloCarrera.Location = new System.Drawing.Point(16, 25);
+            this.lblTituloCarrera.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTituloCarrera.Name = "lblTituloCarrera";
-            this.lblTituloCarrera.Size = new System.Drawing.Size(130, 16);
+            this.lblTituloCarrera.Size = new System.Drawing.Size(159, 20);
             this.lblTituloCarrera.TabIndex = 1;
             this.lblTituloCarrera.Text = "Ingrese la carrera";
             // 
             // txtCarrera
             // 
-            this.txtCarrera.Location = new System.Drawing.Point(74, 60);
+            this.txtCarrera.Location = new System.Drawing.Point(99, 74);
+            this.txtCarrera.Margin = new System.Windows.Forms.Padding(4);
             this.txtCarrera.Name = "txtCarrera";
-            this.txtCarrera.Size = new System.Drawing.Size(164, 20);
+            this.txtCarrera.Size = new System.Drawing.Size(217, 22);
             this.txtCarrera.TabIndex = 2;
             this.txtCarrera.TextChanged += new System.EventHandler(this.txtCarrera_TextChanged);
             // 
@@ -68,9 +72,10 @@
             // 
             this.cmdGrabarCarrera.Enabled = false;
             this.cmdGrabarCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdGrabarCarrera.Location = new System.Drawing.Point(144, 102);
+            this.cmdGrabarCarrera.Location = new System.Drawing.Point(192, 126);
+            this.cmdGrabarCarrera.Margin = new System.Windows.Forms.Padding(4);
             this.cmdGrabarCarrera.Name = "cmdGrabarCarrera";
-            this.cmdGrabarCarrera.Size = new System.Drawing.Size(94, 23);
+            this.cmdGrabarCarrera.Size = new System.Drawing.Size(125, 28);
             this.cmdGrabarCarrera.TabIndex = 3;
             this.cmdGrabarCarrera.Text = "Grabar";
             this.cmdGrabarCarrera.UseVisualStyleBackColor = true;
@@ -79,17 +84,20 @@
             // lstCarreras
             // 
             this.lstCarreras.FormattingEnabled = true;
-            this.lstCarreras.Location = new System.Drawing.Point(12, 161);
+            this.lstCarreras.ItemHeight = 16;
+            this.lstCarreras.Location = new System.Drawing.Point(16, 198);
+            this.lstCarreras.Margin = new System.Windows.Forms.Padding(4);
             this.lstCarreras.Name = "lstCarreras";
-            this.lstCarreras.Size = new System.Drawing.Size(226, 160);
+            this.lstCarreras.Size = new System.Drawing.Size(300, 196);
             this.lstCarreras.TabIndex = 4;
             // 
             // cmdLimpiar
             // 
             this.cmdLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdLimpiar.Location = new System.Drawing.Point(20, 102);
+            this.cmdLimpiar.Location = new System.Drawing.Point(27, 126);
+            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.cmdLimpiar.Name = "cmdLimpiar";
-            this.cmdLimpiar.Size = new System.Drawing.Size(88, 23);
+            this.cmdLimpiar.Size = new System.Drawing.Size(117, 28);
             this.cmdLimpiar.TabIndex = 5;
             this.cmdLimpiar.Text = "Limpiar";
             this.cmdLimpiar.UseVisualStyleBackColor = true;
@@ -97,19 +105,21 @@
             // 
             // frmCarreras
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(248, 329);
+            this.ClientSize = new System.Drawing.Size(331, 405);
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.lstCarreras);
             this.Controls.Add(this.cmdGrabarCarrera);
             this.Controls.Add(this.txtCarrera);
             this.Controls.Add(this.lblTituloCarrera);
             this.Controls.Add(this.lblCarrera);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCarreras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Carreras";
+            this.Text = "Carga de Carreras";
             this.Load += new System.EventHandler(this.frmCarreras_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
