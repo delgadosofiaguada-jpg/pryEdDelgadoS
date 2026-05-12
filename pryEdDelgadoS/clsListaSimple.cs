@@ -71,10 +71,29 @@ namespace pryEdDelgadoS
             Combo.Items.Clear();
             while (aux != null)
             {
-                Combo.Items.Add(aux.Nombre);
+                Combo.Items.Add(aux.Codigo);
                 aux = aux.Siguiente;
             }
         }
+      
+        public void Recorrer(String NombreArchivo)
+        {
+            clsNodo aux = Primero;
+            StreamWriter AD = new StreamWriter(NombreArchivo, false, Encoding.UTF8);
+            AD.WriteLine("Lista de espera\n");
+            AD.WriteLine("Codigo;Nombre;Tramite");
+            while (aux != null)
+            {
+                AD.WriteLine(aux.Codigo);
+                AD.WriteLine(";");
+                AD.WriteLine(aux.Nombre);
+                AD.WriteLine(";");
+                AD.WriteLine(aux.Tramite);
+                aux = aux.Siguiente;
+            }
+            AD.Close();
+        }
+
         public void Eliminar(Int32 Codigo)
         {
             if (Primero.Codigo == Codigo)

@@ -28,7 +28,7 @@ namespace pryEdDelgadoS
             objLista.Recorrer(dgvGrilla);
             objLista.Recorrer(cmbCodigo);
             objLista.Recorrer(lstLista);
-            //objLista.Recorrer("clsListaSimple.csv");
+            objLista.Recorrer("clsListaSimple.csv");
 
             txtCodigo.Clear();
             txtNombre.Clear();
@@ -73,13 +73,24 @@ namespace pryEdDelgadoS
                 objLista.Recorrer(dgvGrilla);
                 objLista.Recorrer(lstLista);
                 objLista.Recorrer(cmbCodigo);
-                //objLista.Recorrer();
+                objLista.Recorrer("clsListaSimple.csv");
             }
             else
             {
                 MessageBox.Show("No hay elementos para eliminar");
             }
             cmdEliminar.Enabled = false;
+            cmbCodigo.Text = "";
+        }
+
+        private void frmListaSimple_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

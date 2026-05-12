@@ -11,8 +11,9 @@ namespace pryEdDelgadoS
     internal class clsPila
     {
        
-        
+        //campo
         private clsNodo pri;
+        //propiedad
         public clsNodo Primero
         {
             get { return pri; }
@@ -30,7 +31,7 @@ namespace pryEdDelgadoS
                 Primero = Nuevo;
             }
         }
-        public void Eliminar(clsNodo Nuevo)
+        public void Eliminar()
         {
             if (Primero != null)
             {
@@ -56,6 +57,23 @@ namespace pryEdDelgadoS
                 Lista.Items.Add(aux.Codigo);
                 aux = aux.Siguiente;
             }
+        }
+
+        public void Recorrer(String NombreArchivo)
+        {
+            clsNodo aux = Primero;
+            StreamWriter AD = new StreamWriter(NombreArchivo, false, Encoding.UTF8);
+
+            AD.WriteLine("Lista de espera");
+            AD.WriteLine("Codigo;Nombre;Tramite");
+
+            while (aux != null)
+            {
+                AD.WriteLine(aux.Codigo + ";" + aux.Nombre + ";" + aux.Tramite);
+                aux = aux.Siguiente;
+            }
+
+            AD.Close();
         }
     }
 }
