@@ -96,5 +96,17 @@ namespace pryEdDelgadoS
            Form v = new frmListaDoble();
             v.ShowDialog();
         }
+
+        private void arbolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form v= new frmArbol();
+            v.ShowDialog();
+        }
+
+        private void grafoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new frmGrafo();
+            form.ShowDialog();
+        }
     }
 }

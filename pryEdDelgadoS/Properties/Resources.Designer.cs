@@ -93,6 +93,16 @@ namespace pryEdDelgadoS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap grafo {
+            get {
+                object obj = ResourceManager.GetObject("grafo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lista_enlazada {
             get {
                 object obj = ResourceManager.GetObject("lista-enlazada", resourceCulture);

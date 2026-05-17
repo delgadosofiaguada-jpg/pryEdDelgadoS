@@ -127,6 +127,9 @@
   <data name="wii" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="listadoblementeligadacircular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listadoblementeligadacircular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cccc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cccc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,7 +139,7 @@
   <data name="cc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="listadoblementeligadacircular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\listadoblementeligadacircular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grafo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grafo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
