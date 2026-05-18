@@ -8,7 +8,7 @@ namespace pryEdDelgadoS
 {
     internal class clsNodo
     {
-       //Campos del nodo
+        //Campos del nodo
         private Int32 cod;
         private String nom;
         private String tra;
@@ -17,32 +17,42 @@ namespace pryEdDelgadoS
 
         //Propiedades del nodo
         public Int32 Codigo
-       { 
+        {
             get { return cod; }//Tomo el valor de un campo
-            set { cod = value;}//Asigno un valor a un campo
-       }
+            set { cod = value; }//Asigno un valor a un campo
+        }
 
-       public String Nombre
-       {
-            get { return nom;}
-            set { nom = value;}
-       }
+        public String Nombre
+        {
+            get { return nom; }
+            set { nom = value; }
+        }
 
-       public String Tramite
-       {
-            get { return tra;}
-            set { tra = value;}
-       }
+        public String Tramite
+        {
+            get { return tra; }
+            set { tra = value; }
+        }
 
-       public clsNodo Siguiente
-       {
-            get { return sig;}
-            set { sig = value;}
-       }
+        public clsNodo Siguiente
+        {
+            get { return sig; }
+            set { sig = value; }
+        }
         public clsNodo Anterior
         {
             get { return ant; }
             set { ant = value; }
-        }   
+        }
+        public clsNodo Izquierdo
+        {
+            get { return ant; }
+            set { ant = value; }
+        }
+        public clsNodo Derecho
+        {
+            get { return sig; }
+            set { sig = value; }
+        }
     }
 }
