@@ -53,17 +53,17 @@
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />
-    <Compile Include="Estructura de Datos.cs">
+    <Compile Include="frmEstructura de Datos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estructura de Datos.Designer.cs">
-      <DependentUpon>Estructura de Datos.cs</DependentUpon>
+    <Compile Include="frmEstructura de Datos.Designer.cs">
+      <DependentUpon>frmEstructura de Datos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmDatosDesarrollador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmDatosDesarrollador.Designer.cs">
+      <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAlumnos.cs">
       <SubType>Form</SubType>
@@ -157,11 +157,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Estructura de Datos.resx">
-      <DependentUpon>Estructura de Datos.cs</DependentUpon>
+    <EmbeddedResource Include="frmEstructura de Datos.resx">
+      <DependentUpon>frmEstructura de Datos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmDatosDesarrollador.resx">
+      <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
