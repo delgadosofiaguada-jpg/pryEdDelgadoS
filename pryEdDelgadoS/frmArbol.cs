@@ -21,22 +21,20 @@ namespace pryEdDelgadoS
         {
 
         }
-       
+        clsArbolBinario objArbol = new clsArbolBinario();
         private void cmdAgregar_Click(object sender, EventArgs e)
         {
            
-            clsNodo x = new clsNodo();
-            x.Codigo = Convert.ToInt32(txtCodigo.Text);
-            x.Nombre = txtNombre.Text;
-            x.Tramite = txtTramite.Text;
+            clsNodo Persona = new clsNodo();
+            Persona.Codigo = Convert.ToInt32(txtCodigo.Text);
+            Persona.Nombre = txtNombre.Text;
+            Persona.Tramite = txtTramite.Text;
 
-            // 3. Pasar el nodo al método Agregar
-            miArbol.Agregar(nuevoNodo);
+            // Pasar el nodo al método Agregar
+            objArbol.Agregar(Persona);
+            objArbol.Recorrer(dgvListado);
+            objArbol.Recorrer(trvArbol);
 
-            // 4. Actualizar la grilla
-            miArbol.Recorrer(dgvListado);
-
-            // Opcional: Limpiar las cajas de texto para la siguiente carga
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtTramite.Text = "";

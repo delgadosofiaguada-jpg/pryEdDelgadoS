@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArbol));
-            this.tvArbol = new System.Windows.Forms.TreeView();
+            this.trvArbol = new System.Windows.Forms.TreeView();
             this.gbNuevoElemento = new System.Windows.Forms.GroupBox();
             this.cmdAgregar = new System.Windows.Forms.Button();
             this.txtTramite = new System.Windows.Forms.TextBox();
@@ -57,13 +57,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             this.SuspendLayout();
             // 
-            // tvArbol
+            // trvArbol
             // 
-            this.tvArbol.Location = new System.Drawing.Point(9, 10);
-            this.tvArbol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tvArbol.Name = "tvArbol";
-            this.tvArbol.Size = new System.Drawing.Size(199, 192);
-            this.tvArbol.TabIndex = 0;
+            this.trvArbol.Location = new System.Drawing.Point(9, 10);
+            this.trvArbol.Margin = new System.Windows.Forms.Padding(2);
+            this.trvArbol.Name = "trvArbol";
+            this.trvArbol.Size = new System.Drawing.Size(199, 192);
+            this.trvArbol.TabIndex = 0;
             // 
             // gbNuevoElemento
             // 
@@ -76,9 +76,9 @@
             this.gbNuevoElemento.Controls.Add(this.lblCod);
             this.gbNuevoElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbNuevoElemento.Location = new System.Drawing.Point(260, 10);
-            this.gbNuevoElemento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbNuevoElemento.Margin = new System.Windows.Forms.Padding(2);
             this.gbNuevoElemento.Name = "gbNuevoElemento";
-            this.gbNuevoElemento.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbNuevoElemento.Padding = new System.Windows.Forms.Padding(2);
             this.gbNuevoElemento.Size = new System.Drawing.Size(178, 191);
             this.gbNuevoElemento.TabIndex = 1;
             this.gbNuevoElemento.TabStop = false;
@@ -88,7 +88,7 @@
             // 
             this.cmdAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdAgregar.Location = new System.Drawing.Point(16, 145);
-            this.cmdAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdAgregar.Name = "cmdAgregar";
             this.cmdAgregar.Size = new System.Drawing.Size(158, 32);
             this.cmdAgregar.TabIndex = 6;
@@ -99,7 +99,7 @@
             // txtTramite
             // 
             this.txtTramite.Location = new System.Drawing.Point(74, 102);
-            this.txtTramite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTramite.Margin = new System.Windows.Forms.Padding(2);
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.Size = new System.Drawing.Size(101, 21);
             this.txtTramite.TabIndex = 5;
@@ -107,7 +107,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(74, 66);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(101, 21);
             this.txtNombre.TabIndex = 4;
@@ -115,7 +115,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(74, 31);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(101, 21);
             this.txtCodigo.TabIndex = 3;
@@ -157,9 +157,9 @@
             this.gbEliminar.Controls.Add(this.label3);
             this.gbEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbEliminar.Location = new System.Drawing.Point(471, 11);
-            this.gbEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.gbEliminar.Name = "gbEliminar";
-            this.gbEliminar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbEliminar.Padding = new System.Windows.Forms.Padding(2);
             this.gbEliminar.Size = new System.Drawing.Size(178, 123);
             this.gbEliminar.TabIndex = 7;
             this.gbEliminar.TabStop = false;
@@ -170,7 +170,7 @@
             this.cbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCodigo.FormattingEnabled = true;
             this.cbCodigo.Location = new System.Drawing.Point(63, 32);
-            this.cbCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.cbCodigo.Name = "cbCodigo";
             this.cbCodigo.Size = new System.Drawing.Size(111, 23);
             this.cbCodigo.TabIndex = 7;
@@ -179,7 +179,7 @@
             // 
             this.cmdEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdEliminar.Location = new System.Drawing.Point(16, 72);
-            this.cmdEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdEliminar.Name = "cmdEliminar";
             this.cmdEliminar.Size = new System.Drawing.Size(158, 32);
             this.cmdEliminar.TabIndex = 6;
@@ -200,7 +200,7 @@
             // 
             this.cmdEquilibrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdEquilibrar.Location = new System.Drawing.Point(479, 155);
-            this.cmdEquilibrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdEquilibrar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdEquilibrar.Name = "cmdEquilibrar";
             this.cmdEquilibrar.Size = new System.Drawing.Size(158, 32);
             this.cmdEquilibrar.TabIndex = 8;
@@ -215,9 +215,9 @@
             this.gbListado.Controls.Add(this.rbInOrden);
             this.gbListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbListado.Location = new System.Drawing.Point(9, 230);
-            this.gbListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbListado.Margin = new System.Windows.Forms.Padding(2);
             this.gbListado.Name = "gbListado";
-            this.gbListado.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbListado.Padding = new System.Windows.Forms.Padding(2);
             this.gbListado.Size = new System.Drawing.Size(644, 179);
             this.gbListado.TabIndex = 7;
             this.gbListado.TabStop = false;
@@ -231,7 +231,7 @@
             this.clNombre,
             this.clTramite});
             this.dgvListado.Location = new System.Drawing.Point(212, 19);
-            this.dgvListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvListado.Margin = new System.Windows.Forms.Padding(2);
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.RowHeadersWidth = 51;
             this.dgvListado.RowTemplate.Height = 24;
@@ -263,7 +263,7 @@
             // 
             this.rbPostOrden.AutoSize = true;
             this.rbPostOrden.Location = new System.Drawing.Point(26, 120);
-            this.rbPostOrden.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbPostOrden.Margin = new System.Windows.Forms.Padding(2);
             this.rbPostOrden.Name = "rbPostOrden";
             this.rbPostOrden.Size = new System.Drawing.Size(87, 19);
             this.rbPostOrden.TabIndex = 2;
@@ -275,7 +275,7 @@
             // 
             this.rbPreOrden.AutoSize = true;
             this.rbPreOrden.Location = new System.Drawing.Point(26, 84);
-            this.rbPreOrden.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbPreOrden.Margin = new System.Windows.Forms.Padding(2);
             this.rbPreOrden.Name = "rbPreOrden";
             this.rbPreOrden.Size = new System.Drawing.Size(82, 19);
             this.rbPreOrden.TabIndex = 1;
@@ -287,7 +287,7 @@
             // 
             this.rbInOrden.AutoSize = true;
             this.rbInOrden.Location = new System.Drawing.Point(26, 45);
-            this.rbInOrden.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbInOrden.Margin = new System.Windows.Forms.Padding(2);
             this.rbInOrden.Name = "rbInOrden";
             this.rbInOrden.Size = new System.Drawing.Size(73, 19);
             this.rbInOrden.TabIndex = 0;
@@ -305,9 +305,9 @@
             this.Controls.Add(this.cmdEquilibrar);
             this.Controls.Add(this.gbEliminar);
             this.Controls.Add(this.gbNuevoElemento);
-            this.Controls.Add(this.tvArbol);
+            this.Controls.Add(this.trvArbol);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmArbol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructuras Ramificadas - Arbol Binario";
@@ -325,7 +325,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TreeView tvArbol;
+        private System.Windows.Forms.TreeView trvArbol;
         private System.Windows.Forms.GroupBox gbNuevoElemento;
         private System.Windows.Forms.Label lblCod;
         private System.Windows.Forms.Button cmdAgregar;
