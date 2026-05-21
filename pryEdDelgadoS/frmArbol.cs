@@ -32,13 +32,44 @@ namespace pryEdDelgadoS
 
             // Pasar el nodo al método Agregar
             objArbol.Agregar(Persona);
+
+            //GRILLA
             objArbol.Recorrer(dgvListado);
+
+            //ARBOL
             objArbol.Recorrer(trvArbol);
 
+            //COMBOBOX
+            objArbol.Recorrer(cbCodigo);
+
+            //VECTOR
+            int[] Vec = new int[10];
+            objArbol.Recorrer(Vec);
+
+
+            //LIMPIAR
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtTramite.Text = "";
-            txtCodigo.Focus();
+            txtCodigo.Focus();//Vuelve el cursor a la caja de texto codigo
+        }
+
+        private void rbInOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbInOrden.Checked)
+                objArbol.Recorrer(dgvListado);
+        }
+
+        private void rbPreOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbPreOrden.Checked)
+                objArbol.RecorrerPreOrden(dgvListado);
+        }
+
+        private void rbPostOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbPostOrden.Checked)
+                objArbol.RecorrerPostOrden(dgvListado);
         }
     }
 }

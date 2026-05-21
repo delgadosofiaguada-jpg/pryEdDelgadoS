@@ -270,6 +270,7 @@
             this.rbPostOrden.TabStop = true;
             this.rbPostOrden.Text = "Post-Orden";
             this.rbPostOrden.UseVisualStyleBackColor = true;
+            this.rbPostOrden.CheckedChanged += new System.EventHandler(this.rbPostOrden_CheckedChanged);
             // 
             // rbPreOrden
             // 
@@ -282,6 +283,7 @@
             this.rbPreOrden.TabStop = true;
             this.rbPreOrden.Text = "Pre-Orden";
             this.rbPreOrden.UseVisualStyleBackColor = true;
+            this.rbPreOrden.CheckedChanged += new System.EventHandler(this.rbPreOrden_CheckedChanged);
             // 
             // rbInOrden
             // 
@@ -294,6 +296,7 @@
             this.rbInOrden.TabStop = true;
             this.rbInOrden.Text = "In-Orden";
             this.rbInOrden.UseVisualStyleBackColor = true;
+            this.rbInOrden.CheckedChanged += new System.EventHandler(this.rbInOrden_CheckedChanged);
             // 
             // frmArbol
             // 

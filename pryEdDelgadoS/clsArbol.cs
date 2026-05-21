@@ -50,7 +50,9 @@ namespace pryEdDelgadoS
                 }
             }
         }
+        
 
+        //Cargar en la grilla
         public void Recorrer(DataGridView Grilla)
         {
             Grilla.Rows.Clear();
@@ -69,24 +71,53 @@ namespace pryEdDelgadoS
                 InOrdenAsc(Dgv, R.Derecho);
             }
         }
+        private void PreOrden(DataGridView Dgv, clsNodo R)
+        {
+            if (R == null) return;
 
-        public void Recorrer(ComboBox Lista)
-        {
-            Lista.Items.Clear();
-            InOrdenAsc(Lista, Raiz);
-        }
-        private void InOrdenAsc(ComboBox Lst, clsNodo R)
-        {
+            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);  // primero el nodo
+
             if (R.Izquierdo != null)
             {
-                InOrdenAsc(Lst, R.Izquierdo);
+                PreOrden(Dgv, R.Izquierdo);
             }
             if (R.Derecho != null)
             {
-                InOrdenAsc(Lst, R.Derecho);
+                PreOrden(Dgv, R.Derecho);
             }
         }
-        
+
+        private void PostOrden(DataGridView Dgv, clsNodo R)
+        {
+            if (R == null) return;
+
+            if (R.Izquierdo != null)
+            {
+                PostOrden(Dgv, R.Izquierdo);
+            }
+            if (R.Derecho != null)
+            {
+                PostOrden(Dgv, R.Derecho);
+            }
+
+            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);  // último el nodo
+        }
+        //RECORRER GRILLA PRE-ORDEN Y POST-ORDEN
+        public void RecorrerPreOrden(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            PreOrden(Grilla, Raiz);
+        }
+
+        public void RecorrerPostOrden(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            PostOrden(Grilla, Raiz);
+        }
+
+
+
+        //Mostrar en el TreeView/Arbol
         private void PreOrden(clsNodo R, TreeNode nodoTreeView)
         {
             TreeNode NodoPadre = new TreeNode(R.Codigo.ToString());
@@ -111,5 +142,53 @@ namespace pryEdDelgadoS
             tree.ExpandAll();
         }
 
+
+
+
+        //Sobrecarga para combobox
+        public void Recorrer(ComboBox Lista)
+        {
+            Lista.Items.Clear();
+            InOrdenAsc(Lista, Raiz);
+        }
+        private void InOrdenAsc(ComboBox Lst, clsNodo R)
+        {
+            if (R.Izquierdo != null)
+            {
+                InOrdenAsc(Lst, R.Izquierdo);
+            }
+            Lst.Items.Add(R.Codigo);
+            if (R.Derecho != null)
+            {
+                InOrdenAsc(Lst, R.Derecho);
+            }
+        }
+
+
+
+
+        //Sobrecarga a un vector
+        private void InOrdenAsc(int[] Vec, clsNodo R, ref int i)
+        {
+            //ref: Evita que se pisen los datos, compartiendo el mismo i e incrementandolo
+           
+            if(R.Izquierdo !=null)
+            {
+                InOrdenAsc(Vec, R.Izquierdo, ref i);
+            }
+            Vec[i] = R.Codigo;
+            i++;
+            if(R.Derecho !=null)
+            {
+                InOrdenAsc(Vec, R.Derecho, ref i);
+            }
+        }   
+        public void Recorrer(int[] Vector)
+        {
+            int indice = 0;
+            InOrdenAsc(Vector, Raiz, ref indice);
+        }
     }
 }
+
+    
