@@ -16,5 +16,15 @@ namespace pryEdDelgadoS
         {
             InitializeComponent();
         }
+        clsGrafo objGrafo = new clsGrafo();
+        private void cmdCargar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdBorrarTodo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
