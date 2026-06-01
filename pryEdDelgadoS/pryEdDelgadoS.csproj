@@ -197,5 +197,13 @@
   <ItemGroup>
     <None Include="Resources\listadoblementeligadacircular.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaseDatos.ED.Delgado.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libreria.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
