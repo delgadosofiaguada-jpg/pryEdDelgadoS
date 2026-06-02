@@ -39,20 +39,22 @@
             // dgvConsultaTabla
             // 
             this.dgvConsultaTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultaTabla.Location = new System.Drawing.Point(12, 37);
+            this.dgvConsultaTabla.Location = new System.Drawing.Point(9, 30);
+            this.dgvConsultaTabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvConsultaTabla.Name = "dgvConsultaTabla";
             this.dgvConsultaTabla.RowHeadersWidth = 51;
             this.dgvConsultaTabla.RowTemplate.Height = 24;
-            this.dgvConsultaTabla.Size = new System.Drawing.Size(860, 394);
+            this.dgvConsultaTabla.Size = new System.Drawing.Size(645, 320);
             this.dgvConsultaTabla.TabIndex = 0;
             // 
             // lblTabla
             // 
             this.lblTabla.AutoSize = true;
             this.lblTabla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTabla.Location = new System.Drawing.Point(12, 471);
+            this.lblTabla.Location = new System.Drawing.Point(9, 383);
+            this.lblTabla.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTabla.Name = "lblTabla";
-            this.lblTabla.Size = new System.Drawing.Size(206, 18);
+            this.lblTabla.Size = new System.Drawing.Size(177, 15);
             this.lblTabla.TabIndex = 1;
             this.lblTabla.Text = "Tabla de la base de datos:";
             // 
@@ -61,17 +63,24 @@
             this.cbTablas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTablas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTablas.FormattingEnabled = true;
-            this.cbTablas.Location = new System.Drawing.Point(254, 463);
+            this.cbTablas.Items.AddRange(new object[] {
+            "Autor",
+            "Idioma",
+            "Libro",
+            "Pais"});
+            this.cbTablas.Location = new System.Drawing.Point(190, 376);
+            this.cbTablas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbTablas.Name = "cbTablas";
-            this.cbTablas.Size = new System.Drawing.Size(204, 26);
+            this.cbTablas.Size = new System.Drawing.Size(154, 23);
             this.cbTablas.TabIndex = 2;
             // 
             // cmdListar
             // 
             this.cmdListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdListar.Location = new System.Drawing.Point(486, 457);
+            this.cmdListar.Location = new System.Drawing.Point(364, 371);
+            this.cmdListar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(141, 39);
+            this.cmdListar.Size = new System.Drawing.Size(106, 32);
             this.cmdListar.TabIndex = 3;
             this.cmdListar.Text = "Listar";
             this.cmdListar.UseVisualStyleBackColor = true;
@@ -79,15 +88,16 @@
             // 
             // frmBdConsultaTablas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(885, 521);
+            this.ClientSize = new System.Drawing.Size(664, 423);
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.cbTablas);
             this.Controls.Add(this.lblTabla);
             this.Controls.Add(this.dgvConsultaTabla);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmBdConsultaTablas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de una Tabla";

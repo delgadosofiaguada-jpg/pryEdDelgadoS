@@ -19,7 +19,8 @@ namespace pryEdDelgadoS
 
         private void cmdListar_Click(object sender, EventArgs e)
         {
-
+            clsBaseDatos bd = new clsBaseDatos();
+            bd.Listar(cbTablas.Text, dgvConsultaTabla);
         }
     }
 }
