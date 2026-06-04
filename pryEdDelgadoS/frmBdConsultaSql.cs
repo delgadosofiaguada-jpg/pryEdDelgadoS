@@ -16,5 +16,11 @@ namespace pryEdDelgadoS
         {
             InitializeComponent();
         }
+
+        private void cmdListar_Click(object sender, EventArgs e)
+        {
+            clsBaseDatos BaseDatos = new clsBaseDatos();
+            BaseDatos.Listar(dgvConsultaSQL, txtConsulta.Text);
+        }
     }
 }

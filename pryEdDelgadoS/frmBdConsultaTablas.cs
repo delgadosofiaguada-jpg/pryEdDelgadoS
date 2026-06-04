@@ -22,5 +22,10 @@ namespace pryEdDelgadoS
             clsBaseDatos bd = new clsBaseDatos();
             bd.Listar(cbTablas.Text, dgvConsultaTabla);
         }
+
+        private void frmBdConsultaTablas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

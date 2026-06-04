@@ -24,7 +24,7 @@ namespace pryEdDelgadoS
 
             try
             {
-                conexion.ConnectionString = CadenaConexion1;
+                conexion.ConnectionString = CadenaConexion2;
                 conexion.Open();
 
                 comando.Connection = conexion;
@@ -52,7 +52,7 @@ namespace pryEdDelgadoS
         {
             try
             {
-                conexion.ConnectionString = CadenaConexion1;
+                conexion.ConnectionString = CadenaConexion2;
                 conexion.Open();
 
                 comando.Connection = conexion;
@@ -80,7 +80,7 @@ namespace pryEdDelgadoS
         {
             try
             {
-                conexion.ConnectionString = CadenaConexion1;
+                conexion.ConnectionString = CadenaConexion2;
                 conexion.Open();
 
                 comando.Connection = conexion;

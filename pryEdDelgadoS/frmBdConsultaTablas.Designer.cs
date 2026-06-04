@@ -40,7 +40,7 @@
             // 
             this.dgvConsultaTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsultaTabla.Location = new System.Drawing.Point(9, 30);
-            this.dgvConsultaTabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvConsultaTabla.Margin = new System.Windows.Forms.Padding(2);
             this.dgvConsultaTabla.Name = "dgvConsultaTabla";
             this.dgvConsultaTabla.RowHeadersWidth = 51;
             this.dgvConsultaTabla.RowTemplate.Height = 24;
@@ -69,7 +69,7 @@
             "Libro",
             "Pais"});
             this.cbTablas.Location = new System.Drawing.Point(190, 376);
-            this.cbTablas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbTablas.Margin = new System.Windows.Forms.Padding(2);
             this.cbTablas.Name = "cbTablas";
             this.cbTablas.Size = new System.Drawing.Size(154, 23);
             this.cbTablas.TabIndex = 2;
@@ -78,7 +78,7 @@
             // 
             this.cmdListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdListar.Location = new System.Drawing.Point(364, 371);
-            this.cmdListar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdListar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdListar.Name = "cmdListar";
             this.cmdListar.Size = new System.Drawing.Size(106, 32);
             this.cmdListar.TabIndex = 3;
@@ -97,10 +97,11 @@
             this.Controls.Add(this.lblTabla);
             this.Controls.Add(this.dgvConsultaTabla);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmBdConsultaTablas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de una Tabla";
+            this.Load += new System.EventHandler(this.frmBdConsultaTablas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaTabla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -16,5 +16,15 @@ namespace pryEdDelgadoS
         {
             InitializeComponent();
         }
+
+        private void cmdListar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmBdRepaso_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
