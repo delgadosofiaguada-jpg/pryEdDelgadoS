@@ -29,19 +29,20 @@ namespace pryEdDelgadoS
         }
 
         public void MostrarDestinos(Int32 f, DataGridView Grilla)
-        { 
+        {
             Grilla.Rows.Clear();
             Grilla.Columns.Clear();
             Grilla.Columns.Add("Col1", "Destino");
-            Grilla.Columns.Add("Col2","Precio");
+            Grilla.Columns.Add("Col2", "Precio");
             Grilla.Columns[0].Width = 200;
             Grilla.Columns[1].Width = 200;
-            Grilla.Rows.Clear();
+
             for (Int32 c = 0; c < 5; c++)
             {
-                if (Precio[f,c]>0)
+                if (Precio[f, c] > 0)
                 {
-                    Grilla.Rows.Add(Ciudades[f], Precio[f,c]);
+                    
+                    Grilla.Rows.Add(Ciudades[c], Precio[f, c]);
                 }
             }
         }
@@ -50,18 +51,20 @@ namespace pryEdDelgadoS
         {
             Grilla.Rows.Clear();
             Grilla.Columns.Clear();
-            Grilla.Columns.Clear();
-            for (Int32 i=0; i<5; i++)
+
+            Grilla.Columns.Add("ColOrigen", "Origen");
+
+            for (Int32 i = 0; i < 5; i++)
             {
-                Grilla.Columns.Add("Destino"+ i.ToString(), Ciudades[i]);
+                Grilla.Columns.Add("Destino" + i.ToString(), Ciudades[i]);
             }
-            for (Int32 f=0; f<5; f++)
+            for (Int32 f = 0; f < 5; f++)
             {
                 Grilla.Rows.Add(Ciudades[f]);
 
                 for (Int32 c = 0; c < 5; c++)
                 {
-                    Grilla.Rows[f].Cells[c + 1].Value = Precio[f,c];
+                    Grilla.Rows[f].Cells[c + 1].Value = Precio[f, c];
                 }
             }
 
